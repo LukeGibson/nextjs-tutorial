@@ -9,7 +9,7 @@ const NotFound = () => {
       router.push('/');
     }, 3000)
     console.log('use effect ran');  
-  }, [])
+  }, [router])
 
   return (
     <div className="not-found">
