@@ -23,7 +23,7 @@ export const getStaticProps = async (context) => {
   }
 }
 
-const Details = ({ user }) => {
+const UserDetails = ({ user }) => {
   return (
     <div>
       <h1>{ user.name }</h1>
@@ -34,4 +34,4 @@ const Details = ({ user }) => {
   );
 }
 
-export default Details;
+export default UserDetails;

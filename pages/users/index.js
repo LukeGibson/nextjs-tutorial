@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from '../../styles/Ninjas.module.css'
+import styles from '../../styles/users.module.css'
 
 // this keyword function runs before component is rendered
 export const getStaticProps = async () => {
@@ -7,19 +7,19 @@ export const getStaticProps = async () => {
   const data = await res.json();
 
   return {
-    props: { ninjas: data }
+    props: { users: data }
   }
 }
 
-const Ninjas = ({ ninjas }) => {
+const Users = ({ users }) => {
   return (
     <div>
-      <h1>All Ninjas</h1>
+      <h1>All Users</h1>
       {
-        ninjas.map((ninja) => (
-          <Link key={ninja.id} href={`/ninjas/${ninja.id}`}>
+        users.map((user) => (
+          <Link key={user.id} href={`/users/${user.id}`}>
             <a className={styles.single}>
-              <h3>{ninja.name}</h3>
+              <h3>{user.name}</h3>
             </a>
           </Link>
         ))
@@ -28,4 +28,4 @@ const Ninjas = ({ ninjas }) => {
   )
 }
 
-export default Ninjas;
+export default Users;

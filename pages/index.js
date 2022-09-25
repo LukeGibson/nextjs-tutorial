@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Ninja List | Home</title>
-        <meta name="keywords" content="ninjas" />
+        <title>User List | Home</title>
+        <meta name="keywords" content="users" />
       </Head>
       <div className={styles.title}>
         <h1>
@@ -19,8 +19,8 @@ export default function Home() {
         <p className={styles.text}>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit ipsa unde nisi totam ullam provident veritatis eligendi molestiae, rerum ad qui nam itaque. Blanditiis, inventore fugit rem qui veniam quos.
         </p>
-        <Link href='/ninjas'>
-          <a className={styles.btn}>See Ninja Listing</a>
+        <Link href='/users'>
+          <a className={styles.btn}>See User Listing</a>
         </Link>
       </div>
     </>
