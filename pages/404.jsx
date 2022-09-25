@@ -1,15 +1,14 @@
-import { useRouter } from "next/router";
-import { useEffect } from "react";
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 
-const NotFound = () => {
-  const router = useRouter()
+function NotFound() {
+  const router = useRouter();
 
   useEffect(() => {
     setTimeout(() => {
       router.push('/');
-    }, 3000)
-    console.log('use effect ran');  
-  }, [router])
+    }, 3000);
+  }, [router]);
 
   return (
     <div className="not-found">
